@@ -1,0 +1,6 @@
+cloudquery/bintools/cn/State.class
+cloudquery/bintools/cn/NFA.class
+cloudquery/bintools/cn/ExpressionReader.class
+cloudquery/bintools/cn/ValidateExpression.class
+cloudquery/bintools/cn/DFA.class
+cloudquery/bintools/cn/RegularExpression.class
