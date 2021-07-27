@@ -1,0 +1,11 @@
+java_antlr_c3/target
+testAntlr/target
+
+java_antlr_c3/.idea
+testAntlr/.idea
+testAntlr/gen
+
+*.iml
+.idea
+*.class
+/testAntlr/src/main/antlr4/gen/
