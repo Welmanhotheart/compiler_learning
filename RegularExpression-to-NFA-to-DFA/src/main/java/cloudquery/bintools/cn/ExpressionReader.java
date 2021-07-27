@@ -1,6 +1,9 @@
 package cloudquery.bintools.cn;
 
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -17,9 +20,9 @@ public class ExpressionReader {
 	// stores the DFA
 	private static DFA dfa;
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException {
 		// Create a Scanner object
-		s = new Scanner (System.in);
+		s = new Scanner (ExpressionReader.class.getResourceAsStream("sampleInput.txt"));
 
 		// Read the regular expression
 		regular = s.next();
