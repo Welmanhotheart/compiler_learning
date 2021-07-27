@@ -24,12 +24,14 @@ public class NewTest {
         ExprParser parser = new ExprParser(ts);
         ExprParser.ExpressionContext root = parser.expression();
 //        root.get
-        CodeCompletionCore ccc = null;
-        return ccc.collectCandidates(pos, root);
-        //return null;
+        CodeCompletionCore ccc = new CodeCompletionCore(parser, null, null);
+        CodeCompletionCore.CandidatesCollection candidatesCollection = ccc.collectCandidates(pos, root);
+        System.out.println("find candidates");
+        return candidatesCollection;
     }
     @Test
     public void basic(){
         String s1 = "var a=b^+c";
+        CodeCompletionCore.CandidatesCollection candidatesCollection = c3(s1);
     }
 }
