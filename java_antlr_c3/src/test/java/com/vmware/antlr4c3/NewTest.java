@@ -19,19 +19,20 @@ public class NewTest {
             throw new IllegalArgumentException("must has trigger character");
         }
         String _new = sqlWithCaret.substring(0, pos)+sqlWithCaret.substring(pos+1);
-
+        System.out.println("expr:"+_new);
         CommonTokenStream ts = new CommonTokenStream(new ExprLexer(CharStreams.fromString(_new)));
+
         ExprParser parser = new ExprParser(ts);
         ExprParser.ExpressionContext root = parser.expression();
 //        root.get
         CodeCompletionCore ccc = new CodeCompletionCore(parser, null, null);
-        CodeCompletionCore.CandidatesCollection candidatesCollection = ccc.collectCandidates(pos, root);
+        CodeCompletionCore.CandidatesCollection candidatesCollection = ccc.collectCandidates(pos-1, root);
         System.out.println("find candidates");
         return candidatesCollection;
     }
     @Test
     public void basic(){
-        String s1 = "var a=b^+c";
+        String s1 = "var a=b ^+ c";
         CodeCompletionCore.CandidatesCollection candidatesCollection = c3(s1);
     }
 }
