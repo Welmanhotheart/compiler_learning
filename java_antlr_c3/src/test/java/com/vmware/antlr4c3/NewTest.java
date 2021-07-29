@@ -8,6 +8,8 @@ import org.junit.Test;
  * TODO
  * @author <a href="zhiwei.wei@bintools.cn">zhiwei.wei</a>
  * @version 1.0.0 2021-07-2021/7/27-下午2:54
+ * //error stragety : https://github.com/tunnelvisionlabs/antlrworks2/blob/master/works.editor.antlr4/src/org/antlr/works/editor/antlr4/completion/CodeCompletionErrorStrategy.java
+ *
  */
 public class NewTest {
     public static final char triggerChar = '^';
