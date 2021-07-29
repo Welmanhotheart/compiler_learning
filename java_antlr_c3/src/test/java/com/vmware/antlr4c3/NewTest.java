@@ -2,8 +2,6 @@ package com.vmware.antlr4c3;
 
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
-import org.antlr.v4.runtime.Parser;
-import org.antlr.v4.runtime.TokenSource;
 import org.junit.Test;
 
 /***
@@ -15,7 +13,7 @@ public class NewTest {
     public static final char triggerChar = '^';
     protected CodeCompletionCore.CandidatesCollection c3(String sqlWithCaret){
         int pos = sqlWithCaret.indexOf(triggerChar);
-        if (-1 == pos){
+        if (-1 == pos) {
             throw new IllegalArgumentException("must has trigger character");
         }
         String _new = sqlWithCaret.substring(0, pos)+sqlWithCaret.substring(pos+1);
@@ -23,16 +21,21 @@ public class NewTest {
         CommonTokenStream ts = new CommonTokenStream(new ExprLexer(CharStreams.fromString(_new)));
 
         ExprParser parser = new ExprParser(ts);
+        parser.setErrorHandler(new BailErrorRecoverStrategy());
         ExprParser.ExpressionContext root = parser.expression();
-//        root.get
         CodeCompletionCore ccc = new CodeCompletionCore(parser, null, null);
         CodeCompletionCore.CandidatesCollection candidatesCollection = ccc.collectCandidates(pos-1, root);
+
         System.out.println("find candidates");
         return candidatesCollection;
     }
+
+//    private
+
     @Test
     public void basic(){
-        String s1 = "var a=b ^+ c";
+        String s1 = "var a=bcd()^+ c";
         CodeCompletionCore.CandidatesCollection candidatesCollection = c3(s1);
+        System.out.println(candidatesCollection.rulePositions);
     }
 }
