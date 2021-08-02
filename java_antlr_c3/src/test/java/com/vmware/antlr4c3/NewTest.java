@@ -19,7 +19,7 @@ public class NewTest {
             throw new IllegalArgumentException("must has trigger character");
         }
         String _new = sqlWithCaret.substring(0, pos)+sqlWithCaret.substring(pos+1);
-        System.out.println("expr:"+_new);
+        System.out.println("expr:" + _new);
         CommonTokenStream ts = new CommonTokenStream(new ExprLexer(CharStreams.fromString(_new)));
 
         ExprParser parser = new ExprParser(ts);

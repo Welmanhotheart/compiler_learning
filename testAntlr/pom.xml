@@ -32,6 +32,11 @@
             <version>7.0.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.vmware.antlr4-c3</groupId>
+            <artifactId>antlr4-c3</artifactId>
+            <version>1.2-SNAPSHOT</version>
+        </dependency>
 
     </dependencies>
 

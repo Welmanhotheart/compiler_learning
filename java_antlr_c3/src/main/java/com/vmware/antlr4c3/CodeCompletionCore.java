@@ -113,7 +113,7 @@ public class CodeCompletionCore {
     private final CandidatesCollection candidates = new CandidatesCollection(); // The collected candidates (rules and tokens).
 
     private final static Map<String, Map<Integer, FollowSetsHolder>> followSetsByATN = new HashMap<>();
-    
+
     public CodeCompletionCore(Parser parser, Set<Integer> preferredRules, Set<Integer> ignoredTokens) {
         this.parser = parser;
         this.atn = parser.getATN();
