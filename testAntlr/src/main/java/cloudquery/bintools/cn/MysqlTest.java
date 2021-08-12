@@ -24,6 +24,7 @@ public class MysqlTest {
         CommonTokenStream ts = new CommonTokenStream(new MySQLStatementLexer(CharStreams.fromString(_new)));
 
         MySQLStatementParser parser = new MySQLStatementParser(ts);
+
 //        parser.setErrorHandler(new BailErrorRecoverStrategy());
 //        ExprParser.ExpressionContext root = parser.expression();
 //        CodeCompletionCore ccc = new CodeCompletionCore(parser, null, null);
@@ -38,7 +39,7 @@ public class MysqlTest {
 
     @Test
     public void basic(){
-        String s1 = "select * from t";
+        String s1 = "select ^ from t";
         CodeCompletionCore.CandidatesCollection candidatesCollection = c3(s1);
         System.out.println(candidatesCollection.rulePositions);
     }
