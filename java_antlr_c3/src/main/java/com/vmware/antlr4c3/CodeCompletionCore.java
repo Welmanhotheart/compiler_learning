@@ -112,7 +112,7 @@ public class CodeCompletionCore {
     private final Map<Integer, Map<Integer, Set<Integer>>> shortcutMap = new HashMap<>();
     private final CandidatesCollection candidates = new CandidatesCollection(); // The collected candidates (rules and tokens).
 
-    private final static Map<String, Map<Integer, FollowSetsHolder>> followSetsByATN = new HashMap<>();
+    private final static Map<String, Map<Integer, FollowSetsHolder>> followSetsByATN = new HashMap<>();//这里的followSetsByATN是什么意思呢?
 
     public CodeCompletionCore(Parser parser, Set<Integer> preferredRules, Set<Integer> ignoredTokens) {
         this.parser = parser;
@@ -388,7 +388,7 @@ public class CodeCompletionCore {
 
         // Start with rule specific handling before going into the ATN walk.
 
-        // Check first if we've taken this path with the same input before.
+        // Check first if we've taken this path with the same input before.,shortcutMap是什么意思这里?
         Map<Integer,Set<Integer>> positionMap = this.shortcutMap.get(startState.ruleIndex);
         if (positionMap == null) {
             positionMap = new HashMap<>();
