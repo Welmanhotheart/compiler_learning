@@ -1,0 +1,21 @@
+rightmost:
+  derivation: difficult
+
+
+first-follow:
+  calculation: for what
+
+translation:
+  recursive-descebt: 5.5.1 couldnt understand
+
+on-the-fly-code-generation:
+  uncovered
+
+bottom-up-and-top-down:
+  difference: wait-to-research
+
+LR-and-LL:
+  subtle-difference: uncovered
+
+LR-parsing:
+  unreviewed
