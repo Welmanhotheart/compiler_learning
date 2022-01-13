@@ -51,3 +51,6 @@ LR-SSD-SDT:
 
 top-down-parsing-DFA-NFA:
   relationship: unknown
+
+LL-grammar-LR-grammar-LLparsing-LRparsing:
+  relationship: unknown
