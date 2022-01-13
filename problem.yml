@@ -6,7 +6,7 @@ first-follow:
   calculation: for what
 
 translation:
-  recursive-descebt: 5.5.1 couldnt understand
+  recursive-descebt: 5.5.1 couldnt understand (little understand)
 
 on-the-fly-code-generation:
   uncovered
@@ -32,4 +32,21 @@ top-down-parsing-and-LLparsing:
 
 bottom-up-parsing-and-LRparsing:
   relationship: unknown
+
+LL-LR:
+  difference: unknown
+
+
+LL-real-implementation:
+  code: had understand none
+
+LR-real-implementation:
+  code: had understand none
+
+LL-SSD-SDT:
+  relationship: unknown
+
+LR-SSD-SDT:
+  relationship: unknown
+
 
