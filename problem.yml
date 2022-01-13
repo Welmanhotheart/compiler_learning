@@ -21,7 +21,7 @@ LR-parsing:
   unreviewed
 
 LL-parsing:
-  unreviewed (done)
+  unreviewed (done, have seen the ll parsing table)
 
 JAVACC-parser:
   lookahead: doubt of its occurence  (done, used for javacc to generator parser)
@@ -59,4 +59,5 @@ interpretor-in-compiler:
   existence: why
 
 bottom-up-parsing-rightmost-derivation:
-  relationship: unknown
+  relationship: unknown (done, reverse rightmost-derivation)
+
