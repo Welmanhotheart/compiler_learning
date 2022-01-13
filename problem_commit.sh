@@ -2,7 +2,7 @@
 
 currentDir=$(pwd)
 
-cd currentDir
+cd $currentDir
 
 git add .
 git commit -m "problem_record"
