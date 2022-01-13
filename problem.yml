@@ -54,3 +54,6 @@ top-down-parsing-DFA-NFA:
 
 LL-grammar-LR-grammar-LLparsing-LRparsing:
   relationship: unknown
+
+interpretor-in-compiler:
+  existence: why
