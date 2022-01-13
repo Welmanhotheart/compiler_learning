@@ -57,3 +57,6 @@ LL-grammar-LR-grammar-LLparsing-LRparsing:
 
 interpretor-in-compiler:
   existence: why
+
+bottom-up-parsing-rightmost-derivation:
+  relationship: unknown
