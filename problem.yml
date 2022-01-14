@@ -61,3 +61,11 @@ interpretor-in-compiler:
 bottom-up-parsing-rightmost-derivation:
   relationship: unknown (done, reverse rightmost-derivation)
 
+type-checking-LL-parsing:
+  relationship: unknow
+
+code-flow-parsing:
+  relationship: unknown
+
+parser-by-hand-parser-from-regularExp:
+  relationship: unknown
