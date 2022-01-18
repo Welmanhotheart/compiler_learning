@@ -4,7 +4,7 @@ testAntlr/target
 java_antlr_c3/.idea
 testAntlr/.idea
 testAntlr/gen
-
+*.tokens
 *.iml
 .idea
 *.class
