@@ -9,3 +9,4 @@ testAntlr/gen
 .idea
 *.class
 /testAntlr/src/main/antlr4/gen/
+/learning-antlr/arrayInit/*.java
