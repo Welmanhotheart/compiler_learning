@@ -23,6 +23,9 @@ LR-parsing:
 LL-parsing:
   unreviewed (done, have seen the ll parsing table)
 
+antlr-recursive-grammar:
+  at org.antlr.v4.analysis.LeftRecursiveRuleTransformer: unsolved
+
 JAVACC-parser:
   lookahead: doubt of its occurence  (done, used for javacc to generator parser)
 
