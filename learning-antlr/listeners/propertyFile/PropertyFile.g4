@@ -1,12 +1,10 @@
 grammar PropertyFile;
-file : prop+ ;
-
-prop : ID '=' STRING '\n' ;
-
-ID : [a-z]+ ; // match lower-case identifiers
-
-STRING : '"' (ESC | ~["\\])* '"' ;
-WS : [ \t\n\r]+ -> skip ;
-fragment ESC : '\\' (["\\/bfnrt] | UNICODE) ;
-fragment UNICODE : 'u' HEX HEX HEX HEX ;
-fragment HEX : [0-9a-fA-F] ;
+@members {
+void startFile() { } // blank implementations
+void finishFile() { }
+void defineProperty(Token name, Token value) { }
+}
+file : {startFile();} prop+ {finishFile();} ;
+prop : ID '=' STRING '\n' {defineProperty($ID, $STRING);} ;
+ID : [a-z]+ ;
+STRING : '"' .*? '"' ;
