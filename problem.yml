@@ -81,3 +81,13 @@ parser:
 
 parsing-strategy:
   SLL: unreviewed
+
+reaching-definition:
+  problem: unreviewed
+
+constant-propagation:
+  unreviewed
+
+buffer-overflow:
+  unreviewed
+
