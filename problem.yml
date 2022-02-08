@@ -104,3 +104,6 @@ flow-insensitive:
 
 context-insensitive:
   unknown
+
+ground-atom:
+  unknown
