@@ -91,3 +91,9 @@ constant-propagation:
 buffer-overflow:
   unreviewed
 
+
+bit-vector-implementation:
+  unknown
+
+negation-atom:
+  unknown
