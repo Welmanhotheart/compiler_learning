@@ -108,3 +108,5 @@ context-insensitive:
 ground-atom:
   unknown
 
+whole-compilation-structure:
+  need-to-cover-it-all
